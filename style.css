@@ -1,0 +1,303 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:  "Poppins";
+    font-size: 19px;
+}
+
+:root{
+    --purple: rgb(201, 152, 246);
+    --red:rgb(233, 45, 45);
+    
+}
+
+body{
+    background-color: #F8FBFF;
+
+}
+
+/* CONTAINER */
+
+
+.container{
+    width: 77%;
+    margin: auto;
+}
+
+
+
+/* PRIMARY BUTTON */
+
+
+#primary-btn{
+    padding: 10px 30px;
+    font-size: 14px;
+    border: none;
+    background-color: var(--red);
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 40px;
+    transition: 0.2s ease-in-out;
+}
+#primary-btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+/* SECONDARY BUTTON */
+#secondary-btn{
+    width: 100%;
+    background-color: var(--red);
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    display: none;
+    font-size: 16px;
+    transition: 1s ease-in-out;
+
+}
+
+/* RED */
+.red{
+    height: 5px;
+    width: 80px;
+    background-color: var(--red);
+    margin: auto;
+}
+
+/* FLEX DIV */
+
+.center{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+/* NAVBAR STYLING */
+
+
+
+nav{
+    background-image: url(./assets/banner_1.jpg);
+    background-repeat:  no-repeat;
+    /* background-position-x:center;
+    background-position-y: 360%;
+    background-size: inherit; */
+    background-size: cover;
+    height: 120vh;
+    color: #fff;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ECFDFF;
+    padding-inline:90px ;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 0px 20px -10px #292929;
+    color: rgb(25, 24, 24);
+}
+.logo h1,span{
+    font-size: 25px;
+    color: rgb(25, 24, 24);
+    
+}
+.logo span{
+    color: rgb(233, 45, 45); 
+}
+
+.nav-list{
+    display: flex;
+    gap: 50px;
+}
+.nav-list ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: rgb(25, 24, 24);
+}
+.nav-list ul li{
+    font-weight: 500;
+    font-size: 13px;
+    transition: 0.2s ease-in-out;
+
+}
+.nav-list ul li:hover{
+    color: var(--purple);
+}
+.nav-list i{
+    padding: 10px;
+}
+
+/* LANDING PAGE  */
+
+
+
+.l-page{
+    position: absolute;
+    width: 70%;
+}
+#main-content{
+    margin-top: 300px;
+    
+}
+#main-content h1{
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 70px;
+    color: #ECFDFF;
+    line-height: 70px;
+}
+
+
+/* MAIN STYLING */
+
+.imgs{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.imgs p:hover{
+    color: var(--purple);
+    transition: 0.2s ease-in-out;
+}
+.imgs .b-1 ,.b-2 ,.b-3 {
+    width: 32%;
+    height: 280px;
+
+
+}
+
+.b-1{
+    background-image: url(./assets/banner_1.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgs .b-1 p{
+    
+    background-color: #fff;
+    width: 50%;
+    font-weight: 700;
+    padding: 10px ;
+}
+
+
+
+.b-2{
+    background-image: url(./assets/banner_2.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imgs .b-2 p{
+    
+    background-color: #fff;
+    width: 50%;
+    font-weight: 700;
+    padding: 10px ;
+}
+.b-3{
+    background-image: url(./assets/banner_3.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imgs .b-3 p{
+    
+    background-color: #fff;
+    width: 50%;
+    font-weight: 700;
+    padding: 10px ;
+}
+
+/* section 2 */
+#sec-2{
+    margin-top: 40px;
+}
+#sec-2 h1{
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+#sec-2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+#sec-2 ul li{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 30px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 4px;
+}
+#sec-2 ul>:nth-child(1){
+    background-color: var(--red);
+    color: #fff;
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+}
+.card-1{
+    margin-top: 20px;
+    width: 20%;
+    height: 347px;
+    transition: 0.2s ease-in-out;
+    border-right: 1px solid #a4a4aa;
+    
+}
+
+.card-1:hover{
+    box-shadow: 0px 0px 10px 0px #a1a0a0;
+}
+.card-1:hover #secondary-btn{
+    display: block;
+}
+.card-1 p{
+    font-size: 13px;
+}
+.card-1 span{
+    color: var(--red);
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-1 img{
+    width: 100%;
+}
+.card-5,.card-10{
+    border: none;
+}
+
+
+/* SECTION 3 */
+
+.bg-img{
+    background-image: url(./assets/deal_ofthe_week.png);
+    height: 89vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #a1a0a024;
+}
