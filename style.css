@@ -9,15 +9,23 @@
     font-family:  "Poppins";
     font-size: 19px;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
+a{
+    text-decoration: none;
+    color: #000;
+    
+}
 :root{
-    --purple: rgb(201, 152, 246);
     --red:rgb(233, 45, 45);
+    --sky:#ECFDFF;
     
 }
 
 body{
-    background-color: #F8FBFF;
+    background-color: #f0f1f3;
 
 }
 
@@ -84,9 +92,6 @@ body{
 nav{
     background-image: url(./assets/banner_1.jpg);
     background-repeat:  no-repeat;
-    /* background-position-x:center;
-    background-position-y: 360%;
-    background-size: inherit; */
     background-size: cover;
     height: 120vh;
     color: #fff;
@@ -96,7 +101,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ECFDFF;
+    background-color: var(--sky);
     padding-inline:90px ;
     height: 100px;
     width: 100%;
@@ -131,12 +136,12 @@ nav{
 
 }
 .nav-list ul li:hover{
-    color: var(--purple);
+    color: var(--red);
 }
-.nav-list i{
+.icon a{
+    color: black;
     padding: 10px;
 }
-
 /* LANDING PAGE  */
 
 
@@ -146,7 +151,7 @@ nav{
     width: 70%;
 }
 #main-content{
-    margin-top: 300px;
+    margin-top: 240px;
     
 }
 #main-content h1{
@@ -156,70 +161,64 @@ nav{
     color: #ECFDFF;
     line-height: 70px;
 }
+#main-content h1 span{
+    color: var(--red);
+    font-size: 60px;
+}
 
 
 /* MAIN STYLING */
+/* SECTION-1 */
 
 .imgs{
-    margin-top: 30px;
+    margin-top: 70px;
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
-.imgs p:hover{
-    color: var(--purple);
+.imgs a:hover{
+    color: var(--red);
     transition: 0.2s ease-in-out;
 }
 .imgs .b-1 ,.b-2 ,.b-3 {
     width: 32%;
     height: 280px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
 
 .b-1{
-    background-image: url(./assets/banner_1.jpg);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(./assets/bmw.avif);
 }
-.imgs .b-1 p{
+.imgs .b-1 a{
     
-    background-color: #fff;
+    background-color: var(--sky);
     width: 50%;
     font-weight: 700;
     padding: 10px ;
-}
-
-
-
-.b-2{
-    background-image: url(./assets/banner_2.jpg);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.imgs .b-2 p{
     
-    background-color: #fff;
+}
+.b-2{
+    background-image: url(./assets/lambo.avif);
+}
+.imgs .b-2 a{
+    
+    background-color: var(--sky);
     width: 50%;
     font-weight: 700;
     padding: 10px ;
 }
 .b-3{
-    background-image: url(./assets/banner_3.jpg);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    background-image: url(./assets/rr1.avif);
 }
-.imgs .b-3 p{
+.imgs .b-3 a{
     
-    background-color: #fff;
+    background-color: var(--sky);
     width: 50%;
     font-weight: 700;
     padding: 10px ;
@@ -256,16 +255,19 @@ nav{
 #cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 20px;
+    gap: 10px;
     padding-bottom: 100px;
 
 }
 .card-1{
     margin-top: 20px;
-    width: 20%;
-    height: 347px;
+    width: 24%;
+    height: 450px;
     transition: 0.2s ease-in-out;
-    border-right: 1px solid #a4a4aa;
+    background-color: white;
+    border-radius: 10px;
     
 }
 
@@ -277,6 +279,9 @@ nav{
 }
 .card-1 p{
     font-size: 13px;
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
 }
 .card-1 span{
     color: var(--red);
@@ -284,20 +289,90 @@ nav{
     font-weight: 600;
 }
 .card-1 img{
-    width: 100%;
-}
-.card-5,.card-10{
-    border: none;
+    width: 95%;
+    margin-top: 7px;
+    border-radius: 5px;
 }
 
 
 /* SECTION 3 */
 
-.bg-img{
+
+#sec-3{
+    margin: 100px 0px;
+    background-image: url(./assets/banner-2.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-position-y: 70%;
+
+}
+
+#scroller {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+   
+    height: 200px;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroll-in{
+    margin: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    position: relative; 
+}
+#scroll-in img{
+    width: 180px;
+    margin-top: 3%;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+#scroll-in2{
+    margin: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll2;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    position: relative; 
+}
+#scroll-in2 img{
+    width: 180px;
+    margin-top: 3%;
+}
+@keyframes scroll2 {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+
+/* .bg-img{
     background-image: url(./assets/deal_ofthe_week.png);
     height: 89vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: auto;
     background-color: #a1a0a024;
-}
+} */
