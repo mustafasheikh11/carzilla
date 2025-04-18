@@ -18,10 +18,12 @@ a {
   text-decoration: none;
   color: #000;
 }
+
 ul{
     list-style: none;
     color: rgb(25, 24, 24);
 }
+
 :root {
   --red: rgb(233, 45, 45);
   --sky: #ecfdff;
@@ -82,7 +84,7 @@ body {
   display: flex;
   justify-content: center;
 }
-/* NAVBAR STYLING */
+/* NAVBAR STYLING START*/
 
 nav {
   background-image: url(./assets/banner_1.jpg);
@@ -91,6 +93,11 @@ nav {
   height: 120vh;
   color: #fff;
 }
+@media screen and (max-width: 1170px) {
+    nav{
+        background-position-x: 50%;
+    }
+  }
 
 .nav {
   display: flex;
@@ -105,6 +112,12 @@ nav {
   box-shadow: 0px 0px 20px -10px #292929;
   color: rgb(25, 24, 24);
 }
+@media screen and (max-width: 860px) {
+    .nav{
+     justify-content: center;
+    }
+   
+ }
 .logo h1,
 span {
   font-size: 25px;
@@ -113,29 +126,64 @@ span {
 .logo span {
   color: rgb(233, 45, 45);
 }
+@media screen and (max-width: 860px) {
+    .logo h1,
+span{
+     font-size: 50px;
+    }
+   
+ }
 
 .nav-list {
   display: flex;
   gap: 50px;
 }
+@media screen and (max-width: 1100px) {
+    .nav-list{
+        gap: 10px;
+    }
+  }
+
 .nav-list ul {
   display: flex;
   gap: 50px;
   
 }
-.nav-list ul li {
+@media screen and (max-width: 1100px) {
+    .nav-list ul{
+        gap: 25px;
+    }
+  }
+.nav-list a {
   font-weight: 500;
   font-size: 13px;
   transition: 0.2s ease-in-out;
 }
-.nav-list ul li:hover {
+@media screen and (max-width: 1100px) {
+    .nav-list a {
+        font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 860px) {
+    .nav .nav-list{
+     display: none;
+    }
+   
+ }
+.nav-list ul li:hover a {
   color: var(--red);
 }
 .icon a {
   color: black;
   padding: 10px;
 }
-/* LANDING PAGE  */
+@media screen and (max-width: 1100px) {
+    .icon a i{
+        font-size: 12px;
+    }
+}
+/* NAVBER END */
+/* HERO PAGE START  */
 
 .l-page {
   position: absolute;
@@ -156,15 +204,20 @@ span {
   font-size: 60px;
 }
 
+/* HERO PAGE END */
+
 /* MAIN STYLING */
-/* SECTION-1 */
+/* SECTION-1 START*/
 
 .imgs {
   margin-top: 70px;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
+
 .imgs a:hover {
   color: var(--red);
   transition: 0.2s ease-in-out;
@@ -181,13 +234,38 @@ span {
   align-items: center;
   border-radius: 10px;
 }
-
+@media screen and (max-width: 850px) {
+    .imgs .b-1,
+.b-2,
+.b-3{
+    width: 40%;
+}
+}
+@media screen and (max-width: 750px) {
+    .imgs .b-1,
+.b-2,
+.b-3{
+    width: 49%;
+}
+}
+@media screen and (max-width: 625px) {
+    .imgs .b-1,
+.b-2,
+.b-3{
+    width: 90%;
+}
+}
 .imgs a {
   background-color: var(--sky);
   width: 50%;
   font-weight: 700;
   padding: 10px;
   border-radius: 5px;
+}
+@media screen and (max-width: 1170px) {
+    .imgs a {
+        font-size: 13px;
+    }
 }
 .b-1 {
   background-image: url(./assets/bmw.avif);
@@ -199,8 +277,9 @@ span {
 .b-3 {
   background-image: url(./assets/rr1.avif);
 }
+/* SECTION 1 END */
 
-/* section 2 */
+/* SECTION 2 START */
 #sec-2 {
   margin-top: 40px;
 }
@@ -221,6 +300,11 @@ span {
   border: 1px solid rgb(225, 225, 225);
   border-radius: 4px;
 }
+@media screen and (max-width: 1000px) {
+    #sec-2 ul li {
+        font-size: 12px;
+    }
+  }
 #sec-2 ul > :nth-child(1) {
   background-color: var(--red);
   color: #fff;
@@ -242,18 +326,54 @@ span {
   background-color: white;
   border-radius: 10px;
 }
-
+@media screen and (max-width: 940px) {
+    .card-1 {
+        width: 30%;
+    }
+  
+}
+@media screen and (max-width: 680px) {
+    .card-1 {
+        width: 45%;
+    }
+  
+}
 .card-1:hover {
   box-shadow: 0px 0px 10px 0px #a1a0a0;
 }
 .card-1:hover #secondary-btn {
   display: block;
 }
+
 .card-1 p {
   font-size: 13px;
   margin: auto;
   width: 80%;
   margin-top: 30px;
+}
+@media screen and (max-width: 940px) {
+    .card-1 p{
+        font-size: 11px;
+    }
+  
+}
+@media screen and (max-width: 680px) {
+    .card-1 p{
+        font-size: 12px;
+    }
+  
+}
+@media screen and (max-width: 940px) {
+    .card-1 h2{
+        font-size: 15px;
+    }
+  
+}
+@media screen and (max-width: 680px) {
+    .card-1 h2{
+        font-size: 15px;
+    }
+  
 }
 .card-1 span {
   color: var(--red);
@@ -265,8 +385,9 @@ span {
   margin-top: 7px;
   border-radius: 5px;
 }
+/* SECTION 2 END */
 
-/* SECTION 3 */
+/* SECTION 3 START*/
 
 #sec-3 {
   margin: 100px 0px;
@@ -278,15 +399,18 @@ span {
 }
 
 #scroller {
-  white-space: nowrap;
+  white-space: nowrap;  
   overflow-x: auto;
   overflow-y: hidden;
-
   height: 200px;
 }
-#scroller::-webkit-scrollbar {
-  display: none;
-}
+@media screen and (max-width: 690px) {
+    #scroller {
+    height: 0%;
+    }
+   
+ }
+
 #scroll-in {
   margin: 10px;
   display: inline-block;
@@ -295,13 +419,13 @@ span {
   animation-duration: 50s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-
   position: relative;
 }
 #scroll-in img {
   width: 180px;
   margin-top: 3%;
 }
+
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -312,20 +436,23 @@ span {
   }
 }
 #scroll-in2 {
-  margin: 10px;
-  display: inline-block;
-  white-space: nowrap;
-  animation-name: scroll2;
-  animation-duration: 50s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-
-  position: relative;
+    margin: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll2;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+    
+    position: relative;
 }
 #scroll-in2 img {
-  width: 180px;
-  margin-top: 3%;
+    width: 180px;
+    margin-top: 3%;
+    
 }
+
 @keyframes scroll2 {
   from {
     transform: translateX(-100%);
@@ -335,8 +462,9 @@ span {
     transform: translateX(0%);
   }
 }
+/* SECTION 3 END */
 
-/* FOOTER STYLING */
+/* FOOTER STYLING START*/
 
 
 footer{
@@ -346,8 +474,24 @@ footer{
 .flex-div{
     padding-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     gap: 70px;
 }
+@media screen and (max-width: 690px) {
+    .flex-div{
+     flex-direction: column;
+     align-items: center;
+    gap: 20px;
+    }
+   
+ }
+
+@media screen and (max-width: 1100px) {
+    #f-con li a{
+     font-size: 13px;
+    }
+   
+ }
 #f-con a{
     font-size: 15px;
     transition: 0.2s ease-in-out;
@@ -372,3 +516,23 @@ footer p span{
 footer p i{
     font-size: 15px;
 }
+.location{
+    width: 40%;
+}
+@media screen and (max-width: 1066px) {
+    .location{
+        width: 80%;
+        
+    }
+   
+ }
+
+ @media screen and (max-width: 690px) {
+    iframe{
+        height: 180px;
+        
+    }
+   
+ }
+
+ /* FOOTER STYLING END */
