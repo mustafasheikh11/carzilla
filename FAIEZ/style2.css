@@ -1,0 +1,386 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:  "Poppins";
+    font-size: 19px;
+}
+
+:root{
+    
+    --red:rgb(233, 45, 45);
+    --sky: #ecfdff;
+    
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: #f0f1f3;
+
+}
+nav{
+    height: 13vh;
+}
+@media screen and (max-width: 1170px) {
+    nav{
+        background-position-x: 50%;
+    }
+  }
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ECFDFF;
+    padding-inline:90px ;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 0px 20px -10px #292929;
+    color: rgb(25, 24, 24);
+    align-items: center;
+}
+@media screen and (max-width: 860px) {
+    .nav{
+     justify-content: center;
+    }
+   
+ }
+
+.nav-list{
+    display: flex;
+    gap: 50px;
+}
+@media screen and (max-width: 1100px) {
+    .nav-list{
+        gap: 10px;
+    }
+  }
+
+.nav-list ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: rgb(25, 24, 24);
+}
+@media screen and (max-width: 1100px) {
+    .nav-list ul{
+        gap: 25px;
+    }
+  }
+
+.nav-list ul a{
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(25, 24, 24);
+    font-weight: 150px;
+    margin-top: 5px;
+
+}
+
+.nav-list ul a:hover{
+    color: var(--red);
+}
+.nav-list a{
+    padding: 10px;
+    font-size: 13px;
+}
+@media screen and (max-width: 1100px) {
+    .nav-list a {
+        font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 860px) {
+    .nav .nav-list{
+     display: none;
+    }
+   
+ }
+
+.nav-list i{
+    padding: 10px;
+}
+
+.icone{
+    margin-top: 10px; 
+}
+@media screen and (max-width: 1100px) {
+    .icone{
+        font-size: 12px;
+    }
+}
+
+.logo h1,span{
+    font-size: 25px;
+    color: rgb(25, 24, 24);
+    
+}
+
+.logo span{
+    color: rgb(233, 45, 45); 
+}
+@media screen and (max-width: 860px) {
+    .logo h1,
+span{
+     font-size: 50px;
+    }
+   
+ }
+.container2{
+    width: 85%;
+    margin: auto;
+    
+}
+#sec-2{
+    margin-top: 40px;
+}
+
+#sec-2 h1{
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+#sec-2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#sec-2 ul li{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 30px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 4px;
+}
+@media screen and (max-width: 1000px) {
+    #sec-2 ul li {
+        font-size: 12px;
+    }
+  }
+
+#sec-2 ul li:hover{
+    background-color: var(--red);
+    color:  #fff;
+}
+
+#sec-2 ul>:nth-child(1){
+    background-color: var(--red);
+    color: #fff;
+}
+
+.center{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.red{
+    height: 5px;
+    width: 80px;
+    background-color: var(--red);
+    margin: auto;
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-1{
+    margin-top: 30px;
+    width: 24%;
+    height: 340px;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #a1a0a0
+    
+}
+@media screen and (max-width: 940px) {
+    .card-1 {
+        width: 26%;
+    }
+  
+}
+@media screen and (max-width: 680px) {
+    .card-1 {
+        width: 41%;
+    }
+  
+}
+
+img{
+    width: 100%;
+    height: 45%;
+    
+}
+
+.card-1:hover #secondary-btn{
+    display: block;
+}
+.card-1 p{
+    font-size: 13px;
+}
+@media screen and (max-width: 940px) {
+    .card-1 p{
+        font-size: 11px;
+    }
+  
+}
+@media screen and (max-width: 680px) {
+    .card-1 p{
+        font-size: 12px;
+    }
+  
+}
+@media screen and (max-width: 940px) {
+    .card-1 h2{
+        font-size: 15px;
+    }
+  
+}
+@media screen and (max-width: 680px) {
+    .card-1 h2{
+        font-size: 15px;
+    }
+  
+}
+.card-1 span{
+    color: var(--red);
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-1 img{
+    width: 95%;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+.card-1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 100px;
+}
+#secondary-btn{
+    width: 100%;
+    background-color: var(--red);
+    color: #fff;
+    border: none;
+    margin-top: 05px;
+    display: none;
+    font-size: 16px;
+    transition: 1s ease-in-out;
+
+}
+.fuel{
+    margin-top: 20px;
+}
+.iconleft{
+margin-right: 30px;
+}
+@media screen and (max-width: 940px) {
+    .iconleft{
+        margin-right: 20px;
+    }
+  
+}
+@media screen and (max-width: 680px) {
+    .iconleft{
+        margin-right: 15px;
+    }
+  
+}
+
+
+.fi-tr-fuel-gauge{
+    font-size: 20px;
+    color: black;
+
+}
+.fi-ss-gas-pump-alt{
+    font-size: 20px;
+}
+
+
+footer{
+    background-color: var(--sky);   
+    padding-bottom: 50px; 
+}
+.flex-div{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+@media screen and (max-width: 690px) {
+    .flex-div{
+     flex-direction: column;
+     align-items: center;
+    gap: 20px;
+    }
+   
+ }
+
+@media screen and (max-width: 1100px) {
+    #f-con li a{
+     font-size: 13px;
+    }
+   
+ }
+#f-con a{
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+    color: black;
+    text-decoration: none;
+}
+#f-con h2{
+    color: var(--red);
+}
+#f-con a:hover{
+    color: var(--red);
+}
+footer p{
+    font-size: 15px;
+    padding-top: 40px;
+    text-align: center;
+    color: #757575;
+}
+footer p span{
+    font-size: 15px;
+    color: var(--red);
+}
+footer p i{
+    font-size: 15px;
+}
+.location{
+    width: 40%;
+}
+@media screen and (max-width: 1066px) {
+    .location{
+        width: 80%;
+        
+    }
+   
+ }
+
+ @media screen and (max-width: 690px) {
+    iframe{
+        height: 180px;
+        
+    }
+   
+ }
